@@ -1,5 +1,9 @@
 - name: "configure {{ component }} server"
-  hosts: "{{ component}}"
+  hosts: "{{ component }}"
   become: yes
   roles:
   - "{{ component }}"
+  tasks:
+    - name: print
+      ansible.builtin.debug:
+        msg: " {{ comment }}"
