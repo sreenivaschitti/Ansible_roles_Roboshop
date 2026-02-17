@@ -20,7 +20,7 @@
     - name: Download catatlogue.zip
       ansible.builtin.get_url:
         url: https://roboshop-artifacts.s3.amazonaws.com/{{ component }}-v3.zip
-        dest: /tmp/"{{ component }}".zip
+        dest: /tmp/{{ component }}.zip
 
      
 
