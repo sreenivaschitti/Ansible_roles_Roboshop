@@ -35,13 +35,9 @@
       - /app/db/master-data.sql
 
 
-
-
-
-
     
-- name: start cart
+- name: start shipping
   ansible.builtin.service:
-        name: cart
+        name: shipping
         state: restarted
         enabled: yes  
