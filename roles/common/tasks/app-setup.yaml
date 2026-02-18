@@ -30,9 +30,4 @@
         dest: /app 
         remote_src: yes
 
-    - name: Set ownership to roboshop
-      ansible.builtin.file:
-        path: /app
-        owner: roboshop
-        group: roboshop
-        recurse: yes    
+   
