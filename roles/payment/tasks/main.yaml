@@ -13,8 +13,3 @@
     name: common
     tasks_from: systemd-setup.yaml
 
-- name: restart payment
-  ansible.builtin.service:
-      name: payment
-      state: restarted
-      enabled: yes 
